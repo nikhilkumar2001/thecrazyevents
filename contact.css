@@ -152,10 +152,9 @@ nav {
   }
   a{
     color: rgba(245, 245, 245, 0);
-    position: fixed;
   }
   .ss {
-    position: fixed;
+    position: relative;
     top: 18.5rem;
     text-align: center;
     align-items: center;
@@ -163,7 +162,6 @@ nav {
     padding: 0.5rem;
 }
 .ss i {
-  position: fixed;
   font-size: 30px;
 }
   section {
