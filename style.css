@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Roboto:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    background: url('/files/v1.mp4');
+
+}
+
+
+div {
+    margin: 0;
+    padding: 0;
+}
+
+.bg-video-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+}
+
+video {
+    /* top: -8rem; */
+    position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+    min-width: 100%;
+    min-height: 100vh;
+}
+
+.overlay {
+   position: relative;
+}
+
+.a4 {
+    text-decoration: none;
+    color: inherit;
+    font-size: 2rem;
+  }
+  
+  .p4 {
+    position: relative;
+    text-align: center;
+    font-size: 3vmin;
+    top: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    line-height: .8;
+    background: linear-gradient(90deg, #000, #fff, #000);
+    background-size: 80% 100%;
+    background-repeat: no-repeat;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 3s linear infinite;
+  }
+  
+  @keyframes shine {
+    0% {
+      background-position-x: -500%;
+    }
+    
+    100% {
+      background-position-x: 500%;
+    }
+  }
+h1 .logoa img {
+    display: flex;
+    position: relative;
+    width: 135px;
+    height: 135px;
+    top: -2rem;
+}
+
+
+.aa {
+    display: flex;
+  justify-content: center;
+    position: relative;
+    top: -4cm;
+    color: #f4f1f1;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.aa:hover {
+    color: #f7b07c;
+}
+
+.aa::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #f7b07c;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.aa:hover::before {
+    transform: scaleX(1);
+}
+
+
+ main .wedding {
+    width: 100cm;
+    height: 40cm;
+    background-color: #EF5354;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    margin: 10px 5px;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 35px;
+    width: 100%;
+    background-color: black;
+    text-align: center;
+
+}
+
+.ss {
+    position: relative;
+    top: 0.5rem;
+    padding: 0.5rem;
+}
+
+.navbar-container{
+    width: 100%; 
+}
+.navbar {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+.navbar-links {
+    display: flex;
+    flex-direction: row;
+}
+.navbar-links .aa {
+    position: relative;
+    margin-right: 50px;
+  }
+
+@media (max-width: 767px) {
+    .navbar-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .navbar-links .aa{
+      display: flex;
+      position: relative;
+      margin: 10px;
+    }
+}
